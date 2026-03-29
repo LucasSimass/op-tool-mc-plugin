@@ -8,11 +8,11 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class FeedCommands implements CommandExecutor {
+public class FeedCommand implements CommandExecutor {
     final PlayerUtils playerUtils;
     final ServerUtils serverUtils;
 
-    public FeedCommands(PlayerUtils playerUtils, ServerUtils serverUtils) {
+    public FeedCommand(PlayerUtils playerUtils, ServerUtils serverUtils) {
         this.playerUtils = playerUtils;
         this.serverUtils = serverUtils;
     }

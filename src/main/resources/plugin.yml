@@ -2,3 +2,32 @@ name: OpTools
 version: '1.0-SNAPSHOT'
 main: me.darkboat.opTools.OpTools
 api-version: '1.21'
+commands:
+  feed:
+    description: "Feed yourself or other player"
+    usage: "/feed [<player>]"
+    permission: op
+  fly:
+    description: "Enable fly to yourself or other player"
+    usage: "/fly [<player>] [off]"
+    permission: op
+  invincible:
+    description: "Make yourself or other player stop to get damage"
+    usage: "/invincible [<player>] [off]"
+    permission: op
+  glow:
+    description: "Make yourself or other player glow"
+    usage: "/glow [<player>] [off]"
+    permission: op
+  invisible:
+    description: "Make yourself or other player invisible"
+    usage: "/invisible [<player>] [off]"
+    permission: o
+  pickup:
+    description: "Make yourself or other player can pickup items"
+    usage: "/pickup [<player>] [off]"
+    permission: op
+  silent:
+    description: "Make yourself or other player sound silent"
+    usage: "/silent [<player>] [off]"
+    permission: op
