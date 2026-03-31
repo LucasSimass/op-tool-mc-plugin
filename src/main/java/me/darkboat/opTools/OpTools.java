@@ -25,6 +25,7 @@ public final class OpTools extends JavaPlugin {
         Objects.requireNonNull(getCommand("glow")).setExecutor(new GlowCommand(commandsUtils));
         Objects.requireNonNull(getCommand("pickup")).setExecutor(new PickUpItemsCommand(commandsUtils));
         Objects.requireNonNull(getCommand("silent")).setExecutor(new SilentCommand(commandsUtils));
+        Objects.requireNonNull(getCommand("kit")).setExecutor(new KitCommand(commandsUtils));
     }
 
     @Override

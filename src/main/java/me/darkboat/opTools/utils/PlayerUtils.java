@@ -1,11 +1,12 @@
 package me.darkboat.opTools.utils;
 
 import me.darkboat.opTools.OpTools;
+import me.darkboat.opTools.classes.Armor;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class PlayerUtils {
+public class PlayerUtils extends Armor {
     private final OpTools plugin;
 
     public PlayerUtils(OpTools plugin) {

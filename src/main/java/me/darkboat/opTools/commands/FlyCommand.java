@@ -1,8 +1,6 @@
 package me.darkboat.opTools.commands;
 
 import me.darkboat.opTools.utils.CommandsUtils;
-import me.darkboat.opTools.utils.PlayerUtils;
-import me.darkboat.opTools.utils.ServerUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -19,7 +17,7 @@ public class FlyCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
         if (sender instanceof Player p) {
-            this.commandsUtils.defaultCommandExecution(p, args, command, p::getAllowFlight, p::setAllowFlight);
+            this.commandsUtils.defaultBooleeanCommandExecution(p, args, command, p::getAllowFlight, p::setAllowFlight);
         }
         return true;
     }

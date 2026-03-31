@@ -1,11 +1,9 @@
 package me.darkboat.opTools.utils;
 
-import com.mojang.brigadier.exceptions.Dynamic3CommandExceptionType;
 import org.bukkit.command.Command;
 import org.bukkit.entity.Player;
 
 import java.util.function.Consumer;
-import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class CommandsUtils {
@@ -17,7 +15,7 @@ public class CommandsUtils {
         this.serverUtils = serverUtils;
     }
 
-    public final void defaultCommandExecution(Player p, String[] args, Command command, Supplier<Boolean> verify, Consumer<Boolean> action) {
+    public final void defaultBooleeanCommandExecution(Player p, String[] args, Command command, Supplier<Boolean> verify, Consumer<Boolean> action) {
         p = args.length == 0 ? p : playerUtils.getPlayerOrSender(args[0], p);
         String pName = p.getName();
         String commandName = command.getName();
@@ -48,5 +46,13 @@ public class CommandsUtils {
             action.accept(true);
             serverUtils.sendServerMessage("<bold>"+ pName + " is enable '" + commandName + "'!</bold>");
         }
+    }
+
+    public PlayerUtils getPlayerUtils() {
+        return playerUtils;
+    }
+
+    public ServerUtils getServerUtils() {
+        return serverUtils;
     }
 }

@@ -17,7 +17,7 @@ public class GlowCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
         if (sender instanceof Player p){
-            commandsUtils.defaultCommandExecution(p, args, command, p::isGlowing, p::setGlowing);
+            commandsUtils.defaultBooleeanCommandExecution(p, args, command, p::isGlowing, p::setGlowing);
         }
         return true;
     }

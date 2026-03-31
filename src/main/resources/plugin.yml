@@ -1,5 +1,5 @@
 name: OpTools
-version: '1.0-SNAPSHOT'
+version: '1.1-SNAPSHOT'
 main: me.darkboat.opTools.OpTools
 api-version: '1.21'
 commands:
@@ -29,5 +29,9 @@ commands:
     permission: op
   silent:
     description: "Make yourself or other player sound silent"
-    usage: "/silent [<player>] [off]"
+    usage: "/silent [<player>] [ off]"
+    permission: op
+  kit:
+    description: "Arm yourself or other player with an Material"
+    usage: "/kit [<player>] [-c | -clear] [leather | l | chainmail | c | iron | i | gold | g | diamond | d | netherite | n]"
     permission: op
